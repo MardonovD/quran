@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&family=Eczar&family=Neonderthaw&family=Open+Sans:ital,wght@1,400;1,500;1,700&family=Pacifico&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,800&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,500&family=Rubik+Beastly&display=swap");
 
+:root {
+  --play-icon: #b20a2c;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -69,16 +73,18 @@ body {
 
 .buttons .icon {
   font-size: 30px;
-  background-color: white;
+  background-color: #b20a2c;
   padding: 5px 20px;
   border-radius: 50%;
-  color: black;
+}
+
+.play {
+  background-color: var(--play-icon);
 }
 
 .buttons .icon:hover {
   transform: scale(0.9);
   background-color: #b20a2c;
-  color: white;
 }
 .sura {
   width: 75%;
@@ -89,7 +95,9 @@ body {
   margin-top: 20px;
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 75%;
+  margin: 0 auto;
+  padding: 10px 0;
   gap: 10px;
   /* justify-content: center;
   align-items: center;
