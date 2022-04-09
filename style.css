@@ -1,5 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&family=Eczar&family=Neonderthaw&family=Open+Sans:ital,wght@1,400;1,500;1,700&family=Pacifico&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,800&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,500&family=Rubik+Beastly&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  color: white;
+  font-family: "Cairo", sans-serif;
+  /* background: url("image/scale_1200.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(-10px);
+  direction: rtl; */
+
+  background: #fffbd5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #b20a2c,
+    #fffbd5
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #b20a2c,
+    #fffbd5
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.container {
+  max-width: 1250px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+  background: #ddd;
+  margin-top: 50px;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  border-radius: 10px;
+}
+
+.player {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #000, #434343);
+}
+
+.container .player .ism {
+  padding: 30px 0;
+  font-size: 30px;
+}
+
+.quranPlayer {
+  width: 50%;
+  height: 50px;
+}
+
+.buttons {
+  display: flex;
+  gap: 50px;
+  padding: 50px 0;
+}
+
+.buttons .icon {
+  font-size: 30px;
+  background-color: white;
+  padding: 5px 20px;
+  border-radius: 50%;
+  color: black;
+}
+
+.buttons .icon:hover {
+  transform: scale(0.9);
+  background-color: #b20a2c;
+  color: white;
+}
+.sura {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.cart {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 10px;
+  /* justify-content: center;
+  align-items: center;
+  justify-content: space-between; */
+}
+
+.box {
+  width: 100%;
+  height: 80px;
+  background-color: cornsilk;
+  border-radius: 10px;
+  padding-left: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.circl {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: cornsilk;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: black;
+  font-weight: 700;
+}
+
+.box p {
+  color: black;
+  font-size: 30px;
+  font-weight: 500;
 }
